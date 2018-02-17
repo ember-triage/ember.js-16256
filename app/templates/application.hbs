@@ -1,5 +1,17 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+{{contact-input
+  fieldName="name"
+  labelText="Name"
+  type="text"
+}}
 
-{{outlet}}
+{{contact-input
+  fieldName="company"
+  labelText="Company"
+  type="text"
+}}
+
+{{contact-input
+  fieldName="email"
+  labelText="Email"
+  type="email"
+}}
