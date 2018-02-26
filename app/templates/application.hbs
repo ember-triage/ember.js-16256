@@ -1,17 +1,25 @@
-{{contact-input
-  fieldName="name"
-  labelText="Name"
-  type="text"
-}}
+<p>
+  
+</p>
+<button {{action (action (mut show) (not show))}}>
+  Change
+</button>
+{{#if show}}
+  {{contact-input
+    fieldName="name"
+    labelText="Name"
+    type="email"
+  }}
 
-{{contact-input
-  fieldName="company"
-  labelText="Company"
-  type="text"
-}}
+  {{contact-input
+    fieldName="company"
+    labelText="Company"
+    type="text"
+  }}
 
-{{contact-input
-  fieldName="email"
-  labelText="Email"
-  type="email"
-}}
+  {{contact-input
+    fieldName="email"
+    labelText="Email"
+    type="email"
+  }}
+{{/if}}
